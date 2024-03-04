@@ -9,7 +9,7 @@ let minutes = 0;
 let interval;
 
 buttonStart.onclick = function () {
-    interval = setInterval(startTimer, 10);
+    interval = setInterval(startTimer, 1000);
 }
 
 buttonStop.onclick = function () {
