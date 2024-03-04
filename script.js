@@ -33,11 +33,20 @@ function startTimer () {
         if (minutes < 10) {        
             appendMinutes.innerHTML = '0'+minutes;
         }
+        else {
+            appendMinutes.innerHTML = minutes;
+        }
         seconds = 0;
-        appendSeconds.innerHTML = 0;
+        appendSeconds.innerHTML = '00';
     }
     else {
-        appendSeconds.innerHTML = seconds;
+        if (seconds < 10) {
+            appendSeconds.innerHTML = '0'+seconds;
+        }
+        else {
+            appendSeconds.innerHTML = seconds;
+        }
+        
     }
 }
 
